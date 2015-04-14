@@ -19,7 +19,11 @@ test('URLs', function (t) {
   t.plan(images.length)
 
   for (var i = 0; i < images.length; i++)
-    urlTest(t, images[i][0], images[i][1])
+    urlTest(images[i][0], images[i][1])
+
+  function urlTest (name, number) {
+    baseTest(t, name, name, number)
+  }
 })
 
 test('Blobs', function (t) {
@@ -27,7 +31,15 @@ test('Blobs', function (t) {
   t.plan(images.length)
 
   for (var i = 0; i < images.length; i++)
-    blobTest(t, images[i][0], images[i][1])
+    blobTest(images[i][0], images[i][1])
+
+  function blobTest (name, number) {
+    getBlobFromImageUrl(name)
+    .then(function (blob) {
+      baseTest(t, name, blob, number)
+    })
+    .catch(t.fail)
+  }
 })
 
 test('Failure', function (t) {
@@ -74,18 +86,6 @@ function baseTest (t, name, input, number) {
     })
     .catch(st.fail)
   }
-}
-
-function urlTest (t, name, number) {
-  baseTest(t, name, name, number)
-}
-
-function blobTest (t, name, number) {
-  getBlobFromImageUrl(name)
-  .then(function (blob) {
-    baseTest(t, name, blob, number)
-  })
-  .catch(t.fail)
 }
 
 // Helper
