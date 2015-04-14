@@ -7,18 +7,6 @@
     "test": "browserify test/index.js | testling",
     "coverage": "browserify -t coverify test/index.js | testling | coverify"
   },
-  "testling": {
-    "files": "test/index.js",
-    "browsers": [
-      "ie/10..latest",
-      "chrome/20..latest",
-      "firefox/13..latest",
-      "safari/6..safari/latest",
-      "opera/12.0..latest",
-      "iphone/6",
-      "ipad/6"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git@github.com:cesarandreu/browser-image-size.git"
