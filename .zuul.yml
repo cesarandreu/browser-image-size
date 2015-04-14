@@ -1,0 +1,12 @@
+ui: tape
+browsers:
+  - name: chrome
+    version: 20..latest
+  - name: firefox
+    version: 13..latest
+  - name: ie
+    version: 10..latest
+  - name: safari
+    version: 6..latest
+  - name: opera
+    version: 12..latest
