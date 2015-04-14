@@ -89,6 +89,7 @@ function baseTest (t, name, input, number) {
 }
 
 // Helper
+// Given a url, return a blob
 function getBlobFromImageUrl (url) {
   return new Promise(function (resolve, reject) {
     var img = document.createElement('img')
