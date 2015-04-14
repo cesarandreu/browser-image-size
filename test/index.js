@@ -32,7 +32,7 @@ test('Blobs', function (t) {
 
 test('Failure', function (t) {
   t.timeoutAfter(5000)
-  t.plan(2)
+  t.plan(3)
 
   browserImageSize('test/fixtures')
   .catch(function () {
@@ -42,6 +42,14 @@ test('Failure', function (t) {
   browserImageSize({})
   .catch(function () {
     t.pass('fail with object input')
+  })
+
+  getBlobFromImageUrl(images[0][0])
+  .then(function (blob) {
+    return browserImageSize(blob.slice(0, 1))
+  })
+  .catch(function () {
+    t.pass('fail with invalid blob')
   })
 })
 
