@@ -8,5 +8,3 @@ browsers:
     version: 10..latest
   - name: safari
     version: 6..latest
-  - name: opera
-    version: 12..latest
