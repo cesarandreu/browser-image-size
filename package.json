@@ -4,7 +4,7 @@
   "description": "Get image size in the browser",
   "main": "lib/index.js",
   "scripts": {
-    "test": "browserify test/index.js | testling",
+    "test": "zuul test/index.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,6 @@
     "browserify": "^9.0.8",
     "promise-polyfill": "^2.0.2",
     "tape": "^4.0.0",
-    "testling": "^1.7.1"
+    "zuul": "^2.1.1"
   }
 }
