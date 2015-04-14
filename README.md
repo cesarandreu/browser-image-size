@@ -1,6 +1,7 @@
 # Browser image size
 
 [![build status][travis-image]][travis-url]
+
 [![Sauce Test Status][sauce-image]][sauce-url]
 
 ## Installation
