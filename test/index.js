@@ -32,7 +32,12 @@ test('Blobs', function (t) {
 
 test('Failure', function (t) {
   t.timeoutAfter(5000)
-  t.plan(3)
+  t.plan(4)
+
+  browserImageSize('')
+  .catch(function () {
+    t.pass('fail with empty path input')
+  })
 
   browserImageSize('test/fixtures')
   .catch(function () {
