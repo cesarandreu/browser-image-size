@@ -37,3 +37,8 @@ browserImageSize('128.png')
 ```sh
 $ npm test -- --local
 ```
+
+## License
+
+MIT
+
