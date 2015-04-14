@@ -1,5 +1,6 @@
 # Browser image size
 
+[![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 
 [![Sauce Test Status][sauce-image]][sauce-url]
@@ -46,6 +47,8 @@ $ npm test -- --local
 
 MIT
 
+[npm-image]: https://img.shields.io/npm/v/koa.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/browser-image-size
 [travis-image]: https://img.shields.io/travis/cesarandreu/browser-image-size/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/cesarandreu/browser-image-size
 [sauce-image]: https://saucelabs.com/browser-matrix/browser-image-size.svg
