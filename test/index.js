@@ -1,7 +1,9 @@
 // ES6 Promise polyfill
+/* istanbul ignore next */
 global.Promise = global.Promise || require('promise-polyfill')
 
 // canvas.toBlob polyfill
+/* istanbul ignore next */
 require('./vendor/canvas-to-blob')
 
 var browserImageSize = require('../lib')
