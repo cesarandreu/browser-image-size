@@ -31,3 +31,9 @@ browserImageSize('128.png')
 **Returns:**
 
 * BrowserImageSizePromise : {Promise} resolved with object containing image width and height
+
+## Tests
+
+```sh
+$ npm test -- --local
+```
