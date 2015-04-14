@@ -1,5 +1,8 @@
 # Browser image size
 
+[![build status][travis-image]][travis-url]
+[![Sauce Test Status][sauce-image]][sauce-url]
+
 ## Installation
 
 ```sh
@@ -42,3 +45,7 @@ $ npm test -- --local
 
 MIT
 
+[travis-image]: https://img.shields.io/travis/cesarandreu/browser-image-size/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/cesarandreu/browser-image-size
+[sauce-image]: https://saucelabs.com/browser-matrix/browser-image-size.svg
+[sauce-url]: https://saucelabs.com/u/browser-image-size
