@@ -30,7 +30,6 @@
   "homepage": "https://github.com/cesarandreu/browser-image-size",
   "devDependencies": {
     "browserify": "^9.0.8",
-    "coverify": "^1.1.0",
     "promise-polyfill": "^2.0.2",
     "tape": "^4.0.0",
     "testling": "^1.7.1"
