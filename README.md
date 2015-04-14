@@ -24,10 +24,10 @@ browserImageSize('128.png')
 
 ### browserImageSize(image)
 
-*Parameters:*
+**Parameters:**
 
 * image : {(File|blob|string)} File, blob, or URL string
 
-*Returns:*
+**Returns:**
 
 * BrowserImageSizePromise : {Promise} resolved with object containing image width and height
