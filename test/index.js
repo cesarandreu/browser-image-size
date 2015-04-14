@@ -32,9 +32,9 @@ test('Failure', function (t) {
   t.timeoutAfter(5000)
   t.plan(2)
 
-  browserImageSize('')
+  browserImageSize('test/fixtures')
   .catch(function () {
-    t.pass('fail with empty string input')
+    t.pass('fail with invalid path input')
   })
 
   browserImageSize({})
