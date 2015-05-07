@@ -1,3 +1,7 @@
+1.1.0 / 2014-05-08
+==================
+
+  * Move object-url require into browserImageSize function
 
 1.0.2 / 2015-04-14
 ==================
